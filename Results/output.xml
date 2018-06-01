@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180218 23:20:34.614" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Mobile\robot-scripts\test\Tests\Basic.robot" id="s1" name="Basic">
+<kw type="setup" name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=6.0.1</arg>
+<arg>deviceName=Nexus5</arg>
+<arg>udid=0bb3b23a43e67009</arg>
+<arg>app=com.meethook.meethookandroid</arg>
+<arg>appActivity=com.meethook.meethookandroid.activity.SplashActivity</arg>
+</arguments>
+<status status="PASS" endtime="20180218 23:20:40.684" starttime="20180218 23:20:34.819"></status>
+</kw>
+<test id="s1-t1" name="TC_Login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/etUserName</arg>
+</arguments>
+<status status="PASS" endtime="20180218 23:20:44.678" starttime="20180218 23:20:40.684"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/etUserName</arg>
+</arguments>
+<msg timestamp="20180218 23:20:44.678" level="INFO">Clicking element 'com.meethook.meethookandroid:id/etUserName'.</msg>
+<status status="PASS" endtime="20180218 23:20:47.849" starttime="20180218 23:20:44.678"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/etUserName</arg>
+</arguments>
+<msg timestamp="20180218 23:20:47.849" level="INFO">Clear text field 'com.meethook.meethookandroid:id/etUserName'</msg>
+<status status="PASS" endtime="20180218 23:20:57.409" starttime="20180218 23:20:47.849"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=com.meethook.meethookandroid:id/etUserName</arg>
+<arg>Jason@mailinator.com</arg>
+</arguments>
+<msg timestamp="20180218 23:20:57.409" level="INFO">Typing text 'Jason@mailinator.com' into text field 'id=com.meethook.meethookandroid:id/etUserName'</msg>
+<status status="PASS" endtime="20180218 23:21:03.129" starttime="20180218 23:20:57.409"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/etPassword</arg>
+</arguments>
+<msg timestamp="20180218 23:21:03.129" level="INFO">Clicking element 'com.meethook.meethookandroid:id/etPassword'.</msg>
+<status status="PASS" endtime="20180218 23:21:03.932" starttime="20180218 23:21:03.129"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/etPassword</arg>
+<arg>qa1234567</arg>
+</arguments>
+<msg timestamp="20180218 23:21:03.932" level="INFO">Typing text 'qa1234567' into text field 'com.meethook.meethookandroid:id/etPassword'</msg>
+<status status="PASS" endtime="20180218 23:21:10.090" starttime="20180218 23:21:03.932"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20180218 23:21:11.660" starttime="20180218 23:21:10.090"></status>
+</kw>
+<doc>Login into the app</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20180218 23:21:11.676" critical="yes" starttime="20180218 23:20:40.684"></status>
+</test>
+<test id="s1-t2" name="TC_Logout">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>com.meethook.meethookandroid:id/tvBtnTitle</arg>
+</arguments>
+<msg timestamp="20180218 23:21:11.709" level="INFO">Clicking element 'com.meethook.meethookandroid:id/tvBtnTitle'.</msg>
+<status status="PASS" endtime="20180218 23:21:11.989" starttime="20180218 23:21:11.709"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>class=android.widget.ImageButton</arg>
+<arg>timeout=15</arg>
+</arguments>
+<msg timestamp="20180218 23:21:27.653" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;hierarchy rotation="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.meethook.meethookandroid" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[318,729][762,1119]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.meethook.meethookandroid" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[318,729][762,1119]" resource-id="" instance="1"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.meethook.meethookandroid" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[318,729][762,1119]" resource-id="android:id/content" instance="2"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.meethook.meethookandroid" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[318,729][762,1119]" resource-id="" instance="0"&gt;&lt;android.widget.ProgressBar index="0" text="" class="android.widget.ProgressBar" package="com.meethook.meethookandroid" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[420,804][660,1044]" resource-id="com.meethook.meethookandroid:id/dialogProgressBar" instance="0"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180218 23:21:29.760" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180218 23:21:29.760" starttime="20180218 23:21:27.653"></status>
+</kw>
+<msg timestamp="20180218 23:21:29.760" level="FAIL">Element locator 'class=android.widget.ImageButton' did not match any elements after 15 seconds</msg>
+<status status="FAIL" endtime="20180218 23:21:29.760" starttime="20180218 23:21:11.989"></status>
+</kw>
+<doc>Logout the user from the app</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20180218 23:21:29.760" critical="yes" starttime="20180218 23:21:11.706">Element locator 'class=android.widget.ImageButton' did not match any elements after 15 seconds</status>
+</test>
+<test id="s1-t3" name="TC_Profile">
+<kw name="TC_Login">
+<msg timestamp="20180218 23:21:29.807" level="FAIL">No keyword with name 'TC_Login' found.</msg>
+<status status="FAIL" endtime="20180218 23:21:29.807" starttime="20180218 23:21:29.807"></status>
+</kw>
+<doc>Check profile data</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20180218 23:21:29.807" critical="yes" starttime="20180218 23:21:29.791">No keyword with name 'TC_Login' found.</status>
+</test>
+<doc>This is basic info</doc>
+<status status="FAIL" endtime="20180218 23:21:29.807" starttime="20180218 23:20:34.614"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="2" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Basic" pass="1">Basic</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
