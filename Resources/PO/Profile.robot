@@ -170,7 +170,6 @@ Navigates to the media section
     sleep   5s
     swipe by percent    50    95      50      10      1000
     sleep   3s
-    #click element   com.meethook.meethookandroid:id/rl_media
     ${isMediaadded}     run keyword and return status       element should be visible       com.meethook.meethookandroid:id/txt_edit_media
     run keyword if      '${isMediaadded}'=='True'     click element   com.meethook.meethookandroid:id/txt_edit_media
     run keyword if      '${isMediaadded}'=='False'     click element   com.meethook.meethookandroid:id/img_edit_media_plus
