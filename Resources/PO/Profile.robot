@@ -6,7 +6,7 @@ Library  String
 
 *** Keywords ***
 Navigates to my personal info
-    wait until page contains element  com.meethook.meethookandroid:id/txt_edit_personal_info    timeout=10s
+    wait until page contains element  com.meethook.meethookandroid:id/txt_edit_personal_info    timeout=15s
     click element  com.meethook.meethookandroid:id/txt_edit_personal_info
 
 
@@ -21,7 +21,9 @@ Tap on save button to save
 
 
 Verfiy the error message on first name field
+    wait until page contains element  xpath=//android.widget.TextView[@text='Please enter your first name.']
     element text should be  xpath=//android.widget.TextView[@text='Please enter your first name.']      Please enter your first name.
+    go back
 
 
 Verfiy the error message on last name field

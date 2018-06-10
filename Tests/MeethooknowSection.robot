@@ -109,7 +109,7 @@ TC_10_Validate that user is able to successfully create a Meethook now session
     Tap on Durtaion screen done button
     Navigates to the skills section of meethook now
     Select a skills
-    Navigates to the session type screen
+    Meethooknow.Navigates to the session type screen
     Select a session type
     Tap on "turn on meethook now" button
     Verify the message displayed when meethook on

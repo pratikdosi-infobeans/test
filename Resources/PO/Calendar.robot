@@ -123,6 +123,7 @@ Select end time after 1 hr of start time
 
 
 check error message on select skills field
+    wait until page contains element    com.meethook.meethookandroid:id/textinput_error
     element text should be      com.meethook.meethookandroid:id/textinput_error     Please select skill.
     go back
 
@@ -131,6 +132,7 @@ Navigates to the skills section of create schedule
 
 
 check error message on seesion type screen
+    wait until page contains element    com.meethook.meethookandroid:id/textinput_error
     element text should be      com.meethook.meethookandroid:id/textinput_error     Please select session type.
     go back
 
@@ -143,6 +145,7 @@ Navigates to the session type screen
     click element   com.meethook.meethookandroid:id/etInterationType
 
 Check the error message on time interval screen
+    wait until page contains element    com.meethook.meethookandroid:id/textinput_error
     element text should be      com.meethook.meethookandroid:id/textinput_error     Please select time interval.
     go back
 
