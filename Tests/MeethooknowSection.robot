@@ -30,8 +30,8 @@ TC_03_Validate the error message when user not enter rates in field
     Tap on "turn on meethook now" button
     Verify the error message when user enters no rates
 
-TC_04_Validate when user enter the 5 rates in rate field
-    [Documentation]  This test is to verifiy the error message when no rates has been entered
+TC_04_Validate when user enter the wrong rates in rate field (Min length validation)
+    [Documentation]  This test is to verifiy the error message when minimum rates validtaion
     [Tags]  Smoke
     check the hamburger option available and tap
     Navigates to the MeetHook now section
@@ -71,7 +71,7 @@ TC_07_Validate that user not able to create MeetHook now less than 10 min
 
 
 
-TC_08_Validate the error message on select skills field
+TC_08_Validate the error message on select skills field (No skill selected)
     [Documentation]  This test is to verify the error message when no skills has been selected
     [Tags]  Smoke
     check the hamburger option available and tap
@@ -83,7 +83,7 @@ TC_08_Validate the error message on select skills field
     Tap on "turn on meethook now" button
     Check the error message on Skills field
 
-TC_09_Validate the error message on select session type field
+TC_09_Validate the error message on select session type field (No session type selected)
     [Documentation]  This test is to verify the error message when session type has not been selected
     [Tags]  Smoke
     check the hamburger option available and tap

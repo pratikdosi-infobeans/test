@@ -72,11 +72,11 @@ Check same percent value get updated
     log to console  ${charityPercent}
     ${percentValue}    get element attribute   com.meethook.meethookandroid:id/tvGiveBackToCharity   text
     log to console      ${percentValue}
+    wait until page contains element  com.meethook.meethookandroid:id/tvGiveBackToCharity
     element should contain text     com.meethook.meethookandroid:id/tvGiveBackToCharity     ${charityPercent}
 
 
 turn off the donate button
-    #click element       com.meethook.meethookandroid:id/switchDonate
     ${Donate_field_State}    get element attribute       com.meethook.meethookandroid:id/etPercentage    focused
     log to console  ${Donate_field_State}
     run keyword if  '${Donate_field_State}'=='true'      click element      com.meethook.meethookandroid:id/switchDonate

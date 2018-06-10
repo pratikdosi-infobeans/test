@@ -8,7 +8,7 @@ Resource    ../Resources/PO/Charity.robot
 Resource    ../Resources/PO/Meethooknow.robot
 Resource    ../Resources/PO/Help.robot
 Resource    ../Resources/PO/Calendar.robot
-
+Resource    ../Resources/PO/Home.robot
 
 
 *** Variables ***
@@ -178,6 +178,10 @@ Verify the error message on duration field
 
 Navigates to the duration screen
     Navigate to the duration screen
+
+
+select a skills in calendar
+    Select a skills
 
 
 

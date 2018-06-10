@@ -138,13 +138,7 @@ TC_11_Validate user is able to add a media
     wait for image to add
     go back
 
-TC_12_Validate user is able to delete a media
-    [Documentation]  Checking user is able to add a link on link screen
-    [Tags]  Smoke
-    check the hamburger option available and tap
-    check the profile option is available to tap
-    wait till user navigates to the profile
-    Navigates to the media section
+
 
 
 
