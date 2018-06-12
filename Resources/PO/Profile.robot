@@ -47,6 +47,18 @@ Navigates to last name field
     hide keyboard
 
 
+Navigates to the billing screen
+    swipe by percent    50    90      50      10      1000
+    sleep  5s
+    ${iscardadded}  run keyword and return status       element should be visible       com.meethook.meethookandroid:id/txt_edit_billing
+    run keyword if      '${iscardadded}'=='True'    click element   com.meethook.meethookandroid:id/txt_edit_billing
+    run keyword if      '${iscardadded}'=='False'    click element   com.meethook.meethookandroid:id/txt_add_billing
+
+
+
+
+
+
 Delete the already added card from profile
     sleep   5s
     click element   com.meethook.meethookandroid:id/txt_default
@@ -150,7 +162,7 @@ check error messge below field
 
 
 Enter URL
-    input text      com.meethook.meethookandroid:id/et_social_media     hhtps://www.google.com
+    input text      com.meethook.meethookandroid:id/et_social_media     https://www.google.com
 
 Navigate to the social platform screen
     click element       com.meethook.meethookandroid:id/tv_platform

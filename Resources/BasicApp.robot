@@ -81,15 +81,15 @@ Fill card details
     wait until page contains element  com.meethook.meethookandroid:id/etFullNameOnCard
     input text  com.meethook.meethookandroid:id/etFullNameOnCard    Mycard
 
-Go to card screen whether card is present or not
-    ${iscardpresent}    run keyword and return status   element should be visible   com.meethook.meethookandroid:id/txt_edit_billing
-    run keyword if      '${iscardpresent}'=='True'  click element   com.meethook.meethookandroid:id/txt_edit_billing
-    run keyword if      '${iscardpresent}'=='False'  click element   com.meethook.meethookandroid:id/txt_add_billing
-    wait until page contains element        com.meethook.meethookandroid:id/tvtitle
-    ${isParentPresent} =  Run Keyword And Return Status    Element Should Be Visible   com.meethook.meethookandroid:id/ll_header
-    log to console   ${isParentPresent}
-    Run Keyword If    '${isParentPresent}'== 'True'     Delete the already added card
-    Run Keyword If    '${isParentPresent}'== 'False'    Add a new card
+##Go to card screen whether card is present or not
+#    ${iscardpresent}    run keyword and return status   element should be visible   com.meethook.meethookandroid:id/txt_edit_billing
+#    run keyword if      '${iscardpresent}'=='True'  click element   com.meethook.meethookandroid:id/txt_edit_billing
+#    run keyword if      '${iscardpresent}'=='False'  click element   com.meethook.meethookandroid:id/txt_add_billing
+#    wait until page contains element        com.meethook.meethookandroid:id/tvtitle
+#    ${isParentPresent} =  Run Keyword And Return Status    Element Should Be Visible   com.meethook.meethookandroid:id/ll_header
+#    log to console   ${isParentPresent}
+#    Run Keyword If    '${isParentPresent}'== 'True'     Delete the already added card
+#    Run Keyword If    '${isParentPresent}'== 'False'    Add a new card
 
 Delete the already added card
     Delete the already added card from profile
@@ -103,6 +103,7 @@ Tap on generic save button
 
 Delete and add new card
     Delete the already added card
+    add a card
 
 Add a card
     Add a new card

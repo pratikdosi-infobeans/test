@@ -57,42 +57,63 @@ Test Teardown   Logout and close app
 #    Select About me section to edit
 #    Tap on generic save button
 
-TC_06_Validate user is able to add and delete already adeed card
-    [Documentation]  Check credit card  is available in profile if not then add it, if already then delete and Addd again
-    [Tags]  Smoke
-    Check the hamburger option available and tap
-    Check the profile option is available to tap
-    wait till user navigates to the profile
-    swipe   500    1450    500    700     1000
-    sleep  5s
-    Go to card screen whether card is present or not
-    #Check if card is already added
-    sleep   10s
-    Tap on generic save button
+#TC_06_Validate user is able to navigates on card screen
+#    [Documentation]  Check user is able to navigates on card screen
+#    [Tags]  Smoke
+#    Check the hamburger option available and tap
+#    Check the profile option is available to tap
+#    wait till user navigates to the profile
+#    Navigates to the billing screen
+#    go back
+#
+#
+#
+#TC_07_Validate user is able to add and delete already added card
+#    [Documentation]  Check credit card  is available in profile if not then add it, if already then delete and Addd again
+#    [Tags]  Smoke
+#    Check the hamburger option available and tap
+#    Check the profile option is available to tap
+#    wait till user navigates to the profile
+#    Navigates to the billing screen
+#    check if card is already added
+#    sleep   10s
+#    Tap on generic save button
 
-TC_07_Add skills in what do you offer?
-    [Documentation]  Checking user is able to add the skills and delete the skills if already added
+TC_08_Validate user is able to navigates on skills screen
+    [Documentation]  Checking user is able to navigates on skills screen
     [Tags]  Smoke
     check the hamburger option available and tap
     check the profile option is available to tap
     wait till user navigates to the profile
-    #swipe   500    1450    500    700     1000
     sleep   10s
     swipe by percent    50    90      50      10      1000
     sleep   10s
     Navigates to the skills section
-    Check if skills is added then delete the skill and add again
-
-TC_08_Validate user is able to Navigates to the Link screen
-    [Documentation]  Checking user is able to navigates on link screen
-    [Tags]  Smoke
-    check the hamburger option available and tap
-    check the profile option is available to tap
-    wait till user navigates to the profile
-    Navigates to Link screen section
     go back
 
-TC_09_Validate the error message on add Link screen
+
+#TC_09_Add skills in what do you offer?
+#    [Documentation]  Checking user is able to add the skills and delete the skills if already added
+#    [Tags]  Smoke
+#    check the hamburger option available and tap
+#    check the profile option is available to tap
+#    wait till user navigates to the profile
+#    sleep   10s
+#    swipe by percent    50    90      50      10      1000
+#    sleep   10s
+#    Navigates to the skills section
+#    Check if skills is added then delete the skill and add again
+
+#TC_10_Validate user is able to Navigates to the Link screen
+#    [Documentation]  Checking user is able to navigates on link screen
+#    [Tags]  Smoke
+#    check the hamburger option available and tap
+#    check the profile option is available to tap
+#    wait till user navigates to the profile
+#    Navigates to Link screen section
+#    go back
+#
+TC_11_Validate the error message on add Link screen
     [Documentation]  Checking user is able to navigates on link screen
     [Tags]  Smoke
     check the hamburger option available and tap
@@ -102,7 +123,7 @@ TC_09_Validate the error message on add Link screen
     Tap on add button at link screen
     check error messge below field
 
-TC_10_Validate the user is able to add a link
+TC_12_Validate the user is able to add a link
     [Documentation]  Checking user is able to add a link on link screen
     [Tags]  Smoke
     check the hamburger option available and tap
@@ -117,7 +138,7 @@ TC_10_Validate the user is able to add a link
     check the added link
 
 
-TC_10_Validate the user is able to navigates to the Media link
+TC_13_Validate the user is able to navigates to the Media link
     [Documentation]  Checking user is able to add a link on link screen
     [Tags]  Smoke
     check the hamburger option available and tap
@@ -127,7 +148,7 @@ TC_10_Validate the user is able to navigates to the Media link
     go back
 
 
-TC_11_Validate user is able to add a media
+TC_14_Validate user is able to add a media
     [Documentation]  Checking user is able to add a link on link screen
     [Tags]  Smoke
     check the hamburger option available and tap
